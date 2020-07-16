@@ -18,6 +18,9 @@
 
 				<button id="btn-login" disabled="true" onclick="login()">Log in</button>
 				<button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+
+				<button id="authorize_button" disabled="true">Authorize</button>
+				<button id="signout_button" disabled="true">Sign Out</button>
 		</div>
 
 		<div class="hidden" id="gated-content">
@@ -50,6 +53,11 @@
 
 	<!-- Authentication -->
 	<script src="https://cdn.auth0.com/js/auth0-spa-js/1.9/auth0-spa-js.production.js">
+	</script>
+
+	<script async defer src="https://apis.google.com/js/api.js"
+	onload="this.onload=function(){};handleClientLoad()"
+	onreadystatechange="if (this.readyState === 'complete') this.onload()">
 	</script>
 
 
